@@ -409,7 +409,7 @@ client.on('message',  message => {
 });
 
 client.on('message', message => {
-    if(message.content.startsWith(prefix & 'الجميع')) {
+    if(message.content.startsWith(prefix + 'move')) {
      if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**لايوجد لديك صلاحية سحب الأعضاء**');
        if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return message.reply("**لايوجد لدي صلاحية السحب**");
     if (message.member.voiceChannel == null) return message.channel.send(`**الرجاء الدخول لروم صوتي**`)
