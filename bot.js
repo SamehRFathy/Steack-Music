@@ -576,19 +576,17 @@ const adkar = [
   '**‏اذكار  |  **اللهم إني أعوذ بك من شر ما عملت، ومن شر ما لم أعمل',
   '**‏اذكار  |  **اللهم مصرف القلوب صرف قلوبنا على طاعتك',
 ]
-client.on('message', message => {
-if (message.author.bot) return;
-if (message.content.startsWith(prefix & "اذكار")) {
-  if(!message.channel.guild) return;
-var client= new Discord.RichEmbed()
-.setTitle("اذكار")
-.setThumbnail(message.author.avatarURL)
-.setColor('RANDOM')
-.setDescription(`${adkar[Math.floor(Math.random() * adkar.length)]}`)
-               .setTimestamp()
-message.channel.sendEmbed(client);
-message.react("??")
-}
+ client.on('message', message => {
+   if (message.content.startsWith("&اذكار")) {
+                if(!message.channel.guild) return message.reply('** This command only for servers**');
+  var embed = new Discord.RichEmbed()
+  .setColor('RANDOM')
+   .setThumbnail(message.author.avatarURL) 
+ .addField('Desert Bot' ,
+  `${adkar[Math.floor(Math.random() * adkar.length)]}`)
+  message.channel.sendEmbed(embed);
+  console.log('[id] Send By: ' + message.author.username)
+    }
 });
  
 
