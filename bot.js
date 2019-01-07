@@ -375,11 +375,27 @@ client.on('message', function(message) {
 })
  
 client.on('message', message => {
-     if (message.content === "مساعدة") {
+     if (message.content === "الدعم") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" :devil: ")
+  .addField(" &مريم
+&اقتراح
+&دعواتي
+&clear
+&خواطر
+&اذكار
+n!new | لتفح تذكرة جديدة مع الدعم الفني
+--------------------------
+بوت الاغاني
+&play لتشغيل اغنية برابط او بأسم
+&skip لتجاوز الاغنية الحالية
+&stop ايقاف الاغنية مؤقتاً
+&resume لمواصلة الاغنية بعد ايقافها
+&vol ⇏ لتغيير درجة الصوت 100 - 0
+&leave⇏ لإخرآج البوت من الروم
+&np ⇏ لمعرفة الأغنية المشغلة حآليا
+&queue ⇏ لمعرفة قآئمة التشغيل ")
      
      
      
