@@ -375,11 +375,11 @@ client.on('message', function(message) {
 })
  
 client.on('message', message => {
-     if (message.content === "^^support") {
+     if (message.content === "مساعدة") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
+  .addField(" :devil: ")
      
      
      
