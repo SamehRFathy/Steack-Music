@@ -436,20 +436,19 @@ client.on('message', async message => {
             }
           }) 
 
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+  });
+
+
+
 client.on('message', message => {
-   if(message.content.startsWith(prefix & "دعوات")) {
-    message.guild.fetchInvites().then(invs => {
-      let user = message.mentions.users.first() || message.author
-      let personalInvites = invs.filter(i => i.inviter.id === user.id);
-      let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
-               let mmmmEmbed = new Discord.RichEmbed()
-                         .setAuthor(client.user.username)
-                         .setThumbnail(message.author.avatarURL)
- .addField(` لقد قمت بدعوة :`, ` ${inviteCount} `)
-           .setFooter(`- Requested By: ${message.author.tag}`);
-           message.channel.send(mmmmEmbed)
-});
-  }
+    if (message.content.startsWith("-invite")) {
+    message.guild.fetchInvites()
+    .then(invites => message.channel.send(`لقد دعوت  ${invites.find(invite => invite.inviter.id === message.author.id).uses} عضو لهاذا السيرفر`))
+     
+    }
 });
  
 client.login(process.env.BOT_TOKEN);
