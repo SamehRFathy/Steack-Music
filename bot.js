@@ -344,7 +344,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل ",
         footer: {
-          text: ":devil:"
+          text: "Devil System"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -389,12 +389,15 @@ client.on('message', message => {
  
 
  const bannedwords = [
-    "كل زق",
-    "السبه",
-    "السبة",
-    "السبة",
-    "السبة",
-    "السبة"
+    "كسمك",
+    "عرص",
+    "خول",
+    "متناك",
+    "قحبه",
+    "ابن عرص",
+    "ابن متناكة",
+    "علق",
+    "قحبة"
 
   ];
 
@@ -406,7 +409,7 @@ client.on('message',  message => {
 });
 
 client.on('message', message => {
-    if(message.content.startsWith(prefix + 'move')) {
+    if(message.content.startsWith(prefix & 'سحب الجميع')) {
      if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**لايوجد لديك صلاحية سحب الأعضاء**');
        if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return message.reply("**لايوجد لدي صلاحية السحب**");
     if (message.member.voiceChannel == null) return message.channel.send(`**الرجاء الدخول لروم صوتي**`)
