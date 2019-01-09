@@ -89,30 +89,6 @@ client.on('guildMemberAdd', member => {
     channel.send({embed : embed});
     })
 	
-	
-	
-client.on("message", message => {
-    var prefix = "&";
- 
-            var args = message.content.substring(prefix.length).split(" ");
-            if (message.content.startsWith(prefix + "clear")) {
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **لا يوجد لديك صلاحية لمسح الشات**');
-        var msg;
-        msg = parseInt();
-      
-      message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
-      message.channel.sendMessage("", {embed: {
-        title: "Done | تــم مسح الشات",
-        color: 0x06DF00,
-        description: "تم مسح الرسائل ",
-        footer: {
-          text: "Devils Clear"
-        }
-      }}).then(msg => {msg.delete(9000)});
-                          }
-
-     
-});
 
 client.on('message', function(message) {
     if (!message.member.hasPermissions(['ADMINISTRATOR'])){
@@ -577,7 +553,7 @@ const Za7f = [
     }
 });
 
-var prefix = "^";
+var prefix = "&";
  
 client.on('message', msg => {
   if (msg.author.bot) return;
@@ -592,7 +568,7 @@ client.on('message', msg => {
     if(msg.member.hasPermission("MANAGE_MESSAGES")) {
     if (textxt == "") {
         msg.delete().then
-    msg.channel.send("***```ضع عدد الرسائل التي تريد مسحها 👌```***").then(m => m.delete(3000));
+    msg.channel.send("***``` ضع عدد الرسائل التي تريد مسحها اقصي عدد هو 100 رساله 👌```***").then(m => m.delete(3000));
 } else {
     msg.delete().then
     msg.delete().then
