@@ -968,11 +968,9 @@ client.channels.find('id', '537140397915504660').setName("Welcom");
 client.channels.find('id', '537140397915504660').setName("Welcome");
 client.channels.find('id', '537140397915504660').setName("Welcome T");
 client.channels.find('id', '537140397915504660').setName("Welcome To");
-client.channels.find('id', '537140397915504660').setName("Welcome To C");
-client.channels.find('id', '537140397915504660').setName("Welcome To Co");
-client.channels.find('id', '537140397915504660').setName("Welcome To Cod");
-client.channels.find('id', '537140397915504660').setName("Welcome To Code");
-client.channels.find('id', '537140397915504660').setName("Welcome To Codes");
+client.channels.find('id', '537140397915504660').setName("Welcome To De");
+client.channels.find('id', '537140397915504660').setName("Welcome To Devi");
+client.channels.find('id', '537140397915504660').setName("Welcome To Devils");
   }, 3000);
 });
 
