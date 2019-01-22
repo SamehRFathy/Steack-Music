@@ -959,20 +959,20 @@ const prefix = '='
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '534408536080384010').setName("W");
-client.channels.find('id', '534408536080384010').setName("We");
-client.channels.find('id', '534408536080384010').setName("Wel");
-client.channels.find('id', '534408536080384010').setName("Welc");
-client.channels.find('id', '534408536080384010').setName("Welco");
-client.channels.find('id', '534408536080384010').setName("Welcom");
-client.channels.find('id', '534408536080384010').setName("Welcome");
-client.channels.find('id', '534408536080384010').setName("Welcome T");
-client.channels.find('id', '534408536080384010').setName("Welcome To");
-client.channels.find('id', '534408536080384010').setName("Welcome To C");
-client.channels.find('id', '534408536080384010').setName("Welcome To Co");
-client.channels.find('id', '534408536080384010').setName("Welcome To Cod");
-client.channels.find('id', '534408536080384010').setName("Welcome To Code");
-client.channels.find('id', '534408536080384010').setName("Welcome To Codes");
+client.channels.find('id', '537140397915504660').setName("W");
+client.channels.find('id', '537140397915504660').setName("We");
+client.channels.find('id', '537140397915504660').setName("Wel");
+client.channels.find('id', '537140397915504660').setName("Welc");
+client.channels.find('id', '537140397915504660').setName("Welco");
+client.channels.find('id', '537140397915504660').setName("Welcom");
+client.channels.find('id', '537140397915504660').setName("Welcome");
+client.channels.find('id', '537140397915504660').setName("Welcome T");
+client.channels.find('id', '537140397915504660').setName("Welcome To");
+client.channels.find('id', '537140397915504660').setName("Welcome To C");
+client.channels.find('id', '537140397915504660').setName("Welcome To Co");
+client.channels.find('id', '537140397915504660').setName("Welcome To Cod");
+client.channels.find('id', '537140397915504660').setName("Welcome To Code");
+client.channels.find('id', '537140397915504660').setName("Welcome To Codes");
   }, 3000);
 });
 
