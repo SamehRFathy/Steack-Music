@@ -957,23 +957,5 @@ const prefix = '='
     }
 	});
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '537140397915504660').setName("W");
-client.channels.find('id', '537140397915504660').setName("We");
-client.channels.find('id', '537140397915504660').setName("Wel");
-client.channels.find('id', '537140397915504660').setName("Welc");
-client.channels.find('id', '537140397915504660').setName("Welco");
-client.channels.find('id', '537140397915504660').setName("Welcom");
-client.channels.find('id', '537140397915504660').setName("Welcome");
-client.channels.find('id', '537140397915504660').setName("Welcome T");
-client.channels.find('id', '537140397915504660').setName("Welcome To");
-client.channels.find('id', '537140397915504660').setName("Welcome To De");
-client.channels.find('id', '537140397915504660').setName("Welcome To Devi");
-client.channels.find('id', '537140397915504660').setName("Welcome To Devils");
-  }, 3000);
-});
-
-
 
 client.login(process.env.BOT_TOKEN);
