@@ -478,11 +478,9 @@ const saraha = [
    .setThumbnail(message.author.avatarURL) 
  .addField('Desert Bot' ,
   `${saraha[Math.floor(Math.random() * saraha.length)]}`)
-  message.author.sendEmbed(embed);
+  message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
     }
-return message.reply("You Can change the username 2 times per hour");
-} 
 });
 
 const Za7f = [
