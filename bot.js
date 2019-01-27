@@ -478,7 +478,7 @@ const saraha = [
    .setThumbnail(message.author.avatarURL) 
  .addField('Desert Bot' ,
   `${saraha[Math.floor(Math.random() * saraha.length)]}`)
-  message.channel.sendEmbed(embed);
+  message.author.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
     }
 });
