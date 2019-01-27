@@ -481,6 +481,8 @@ const saraha = [
   message.author.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
     }
+return message.reply("You Can change the username 2 times per hour");
+} 
 });
 
 const Za7f = [
